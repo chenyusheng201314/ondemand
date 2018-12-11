@@ -1,0 +1,87 @@
+<template>
+  <div class="con">
+    <div class="footer">
+      <div class="container">
+        <div class="container-top">
+          <div class="container-top-left">
+            <img src="/images/footer/home_qrcode_peixunjianghur_.png" alt="">
+            <img src="/images/footer/home_qrcode_andimandaxue_.png" alt="">
+          </div>
+          <div class="container-top-right">
+            <div class="container-top-right-mian">
+              <div class="mian-detail">
+                <p>关于我们</p>
+                <ul>
+                  <li v-for="(item,index) in about" :key="index">
+                    <nuxt-link :to="item.link">{{item.name}}</nuxt-link>
+                  </li>
+                </ul>
+              </div>
+              <div class="mian-detail">
+                <p>培训江湖</p>
+                <ul>
+                  <li v-for="(item,index) in jianghu" :key="index">
+                    <nuxt-link :to="item.link">{{item.name}}</nuxt-link>
+                  </li>
+                </ul>
+              </div>
+              <div class="mian-detail">
+                <p>培训江湖</p>
+                <ul>
+                  <li v-for="(item,index) in help" :key="index">
+                    <nuxt-link :to="item.link">{{item.name}}</nuxt-link>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="container-top-contact">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <p>安迪曼教育咨询无锡有限公司 版权所有 <span>苏ICP备18019875号-1 苏ICP备18019875号-2</span> Copyright 2015-2018,OnDemand Consulting, All
+        Rights Reserved.</p>
+    </div>
+  </div>
+</template>
+
+<script>
+  export default {
+    name: "footer1",
+    data() {
+      return {
+        about: [
+          {name: '安迪曼简介', link: ''},
+          {name: '免责声明', link: ''},
+          {name: '联系方式', link: ''},
+          {name: '商务合作', link: ''},
+        ],
+        jianghu: [
+          {name: '原创作家', link: ''},
+          {name: '培训人社区', link: ''},
+          {name: '培训人招聘', link: ''},
+        ],
+        help: [
+          {name: '会员权益', link: ''},
+          {name: '常见问题', link: ''},
+        ]
+      }
+    },
+    head: {
+      link: [
+        {
+          href: '/css/footer.css',
+          type: 'text/css',
+          rel: 'stylesheet',
+        },
+      ]
+    }
+  }
+</script>
+
+<style scoped>
+
+</style>

@@ -1,0 +1,312 @@
+.news-tab {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  text-align: center;
+}
+
+.news-tab span {
+  display: inline-block;
+  width: 165px;
+  height: 45px;
+  border-radius: 40px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+  background: #E1E1E1;
+  text-align: left;
+  padding: 5px;
+}
+
+.news-tab span a {
+  display: inline-block;
+  width: 120px;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  border-radius: 35px;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  -ms-border-radius: 35px;
+  -o-border-radius: 35px;
+  background: #999999;
+  color: #fff;
+  font-size: 20px;
+}
+
+.news-tab span a.choose {
+  background: #F19200;
+}
+
+.news-list {
+  width: 1000px;
+  height: auto;
+  overflow: hidden;
+  margin: 35px auto 0;
+}
+
+.news-list li {
+  background: #F5F5F5;
+  width: 100%;
+  height: 256px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+.news-list li .news-list-cover {
+  float: left;
+  width: 455px;
+  height: 256px;
+}
+
+.news-list li .news-list-cover img {
+  width: 455px;
+  height: 256px;
+}
+
+.news-list li .news-list-main {
+  width: 545px;
+  height: 256px;
+  padding: 30px;
+  float: left;
+}
+
+.news-list li .news-list-main p {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.news-list li .news-list-main .list-main-tit {
+  font-size: 24px;
+  color: #F19200;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.news-list li .news-list-main .list-main-con {
+  margin-top: 30px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  font-size: 16px;
+  color: #666;
+}
+
+.news-list li .news-list-main .list-main-date {
+  font-size: 15px;
+  color: #666;
+  text-align: right;
+  margin-top: 30px;
+}
+
+.news-detail {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.news-article {
+  width: 810px;
+  height: auto;
+  float: left;
+  padding-right: 30px;
+  border-right: 1px solid #CCCCCC;
+}
+
+.news-article .article-title {
+  width: 90%;
+  margin: 0 auto;
+  height: auto;
+  overflow: hidden;
+  font-size: 20px;
+  color: #F19200;
+  text-align: center;
+
+}
+
+.news-article .article-info {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.news-article .article-info span {
+  margin-right: 35px;
+  font-size: 15px;
+  color: #666;
+
+}
+
+.article-main {
+  margin-top: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px dashed #666;
+}
+
+.article-main img {
+  width: 100%;
+}
+
+.article-ban {
+  border-bottom: 1px dashed #666;
+  padding: 20px 0;
+}
+
+.news-article .other-article {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.news-article .other-article a {
+  width: 45%;
+  height: auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 15px;
+  color: #666;
+}
+
+.news-article .other-article a:hover {
+  color: #F19200;
+}
+
+.news-article .other-article .other-left {
+  float: left;
+}
+
+.news-article .other-article .other-right {
+  float: right;
+}
+
+.news-detail .news-other-lists {
+  width: 330px;
+  float: left;
+  padding-left: 30px;
+}
+
+.news-detail .news-other-lists .other-tips {
+  width: 165px;
+  height: 45px;
+  background: #E1E1E1;
+  border-radius: 45px;
+  -webkit-border-radius: 45px;
+  -moz-border-radius: 45px;
+  -ms-border-radius: 45px;
+  -o-border-radius: 45px;
+  padding: 5px;
+}
+
+.news-detail .news-other-lists .other-tips p {
+  width: 120px;
+  height: 35px;
+  border-radius: 35px;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  -ms-border-radius: 35px;
+  -o-border-radius: 35px;
+  background: #F19200;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  line-height: 35px;
+}
+
+.news-detail .news-other-lists ul, .news-detail .news-other-lists ul li {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.news-detail .news-other-lists ul li {
+  width: 100%;
+  height: auto;
+  margin-top: 40px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.news-detail .news-other-lists ul li img {
+  width: 264px;
+  height: 148px;
+}
+
+.news-detail .news-other-lists ul li p {
+  width: 264px;
+  height: auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: center;
+  color: #666;
+  font-size: 15px;
+  margin: 15px auto 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,227 @@
+.blog-type {
+  width: 100%;
+  height: auto;
+  padding: 12px 0;
+  border-top: 1px solid #CCCCCC;
+  border-bottom: 1px solid #CCCCCC;
+  overflow: hidden;
+}
+
+.blog-type .blog-type-left {
+  width: 120px;
+  float: left;
+  text-align: center;
+  height: 25px;
+  line-height: 25px;
+  font-size: 15px;
+  color: #333;
+  font-weight: bolder;
+}
+
+.blog-type .blog-type-right {
+  width: 1020px;
+  float: right;
+  height: auto;
+  overflow: hidden;
+}
+
+.blog-type .blog-type-right span {
+  display: inline-block;
+  min-width: 45px;
+  padding: 0 15px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  font-size: 15px;
+  color: #666;
+  margin-right: 50px;
+  cursor: pointer;
+}
+
+.blog-type .blog-type-right span.choose {
+  background: #F19200;
+  color: #fff;
+}
+
+.blog-sec-tit {
+  width: 100%;
+  height: 45px;
+  background: #eee;
+  margin-top: 20px;
+  padding: 0 45px;
+}
+
+.blog-sec-tit p {
+  float: left;
+  min-width: 100px;
+  height: 50px;
+  border: 1px solid #E5E5E5;
+  background: #fff;
+  border-bottom: 1px solid #F19200;
+  margin-top: -5px;
+  text-align: center;
+  line-height: 50px;
+  padding: 0 30px;
+  font-size: 18px;
+  color: #F19200;
+}
+
+.article-list {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+.article-list tr:nth-child(odd) {
+  background: #EEEEEE;
+}
+
+.article-list tr, .article-list td, .article-list th, .article-list th a {
+  border: 1px solid #CCCCCC;
+  text-align: center;
+  font-size: 15px;
+  color: #666;
+  height: 50px;
+  cursor: pointer;
+}
+
+.article-list tr:hover a {
+  color: #F19200;
+}
+
+.news-article {
+  width: 810px;
+  height: auto;
+  float: left;
+  padding-right: 30px;
+  border-right: 1px solid #CCCCCC;
+}
+
+.news-article .article-title {
+  width: 90%;
+  margin: 0 auto;
+  height: auto;
+  overflow: hidden;
+  font-size: 20px;
+  color: #F19200;
+  text-align: center;
+}
+
+.news-article .article-info {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.news-article .article-info span {
+  margin-right: 35px;
+  font-size: 15px;
+  color: #666;
+
+}
+
+.article-main {
+  margin-top: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px dashed #666;
+}
+
+.article-main img {
+  width: 100%;
+}
+
+.article-ban {
+  border-bottom: 1px dashed #666;
+  padding: 20px 0;
+}
+
+.news-article .other-article {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.news-article .other-article a {
+  width: 45%;
+  height: auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 15px;
+  color: #666;
+}
+
+.news-article .other-article a:hover {
+  color: #F19200;
+}
+
+.news-article .other-article .other-left {
+  float: left;
+}
+
+.news-article .other-article .other-right {
+  float: right;
+}
+
+.blog-other-lists {
+  width: 330px;
+  float: left;
+  padding-left: 30px;
+}
+
+.blog-other-lists .other-tips {
+  width: 165px;
+  height: 45px;
+  background: #E1E1E1;
+  border-radius: 45px;
+  -webkit-border-radius: 45px;
+  -moz-border-radius: 45px;
+  -ms-border-radius: 45px;
+  -o-border-radius: 45px;
+  padding: 5px;
+}
+
+.blog-other-lists .other-tips p {
+  width: 120px;
+  height: 35px;
+  border-radius: 35px;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  -ms-border-radius: 35px;
+  -o-border-radius: 35px;
+  background: #F19200;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  line-height: 35px;
+}
+
+.other-list {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.other-list li {
+  width: 100%;
+  height: auto;
+  margin-top: 30px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.other-list li a {
+  display: inline-block;
+  width: 264px;
+  height: auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: center;
+  color: #666;
+  font-size: 15px;
+  margin: 0 auto;
+}

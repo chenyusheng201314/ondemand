@@ -1,0 +1,689 @@
+.ondemand-index {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.position-relative {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.swiper-container-banner {
+  height: 600px;
+  text-align: center;
+  margin-left: -15px !important;
+  margin-right: -15px !important;
+}
+
+.swiper-slide-banner {
+  display: flex;
+  flex-direction: column;
+  /*justify-content: center;*/
+  align-items: center;
+}
+
+.swiper-img-banner-bg {
+  width: 100%;
+  height: 100%;
+  background: no-repeat center;
+  background-size: cover;
+}
+
+.swiper-img-banner {
+  /*width: 100%;*/
+  height: 100%;
+  vertical-align: middle;
+}
+
+.con .banner-prev {
+  background-image: none;
+  font-size: 44px;
+  line-height: 44px;
+  font-weight: 800;
+  opacity: 0.5;
+  color: #999;
+  margin-left: 15px;
+
+}
+
+.con .banner-next {
+  background-image: none;
+  font-size: 44px;
+  opacity: 0.5;
+  line-height: 44px;
+  font-weight: 800;
+  color: #999;
+  margin-right: 15px;
+}
+
+.con .swiper-pagination.swiper-pagination-banner {
+  width: 100%;
+  bottom: 50px;
+}
+
+.con .swiper-pagination-banner > .swiper-pagination-bullet {
+  width: 7px;
+  height: 7px;
+  vertical-align: middle;
+  background: #BBBBBB;
+  opacity: 1;
+  margin: 50px 10px 0;
+}
+
+.con .swiper-pagination-bullet-active,
+.con .swiper-pagination-banner > .swiper-pagination-bullet-active {
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+  background: #ff6900;
+  margin: 50px 10px 0;
+}
+
+.ondemand-index .index-model {
+  width: 1200px;
+  height: auto;
+  overflow: hidden;
+  margin: 90px auto 0;
+  position: relative;
+}
+
+.ondemand-index .index-model .model-title, .ondemand-index .index-model .model-en-tit {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  text-align: center;
+  font-size: 35px;
+  color: #333333;
+}
+
+.ondemand-index .index-model .model-en-tit {
+  font-size: 15px;
+  color: #666;
+}
+
+.ondemand-index .index-model .model-more, .index-news .model-more {
+  position: absolute;
+  right: 0;
+  top: 50px;
+  cursor: pointer;
+}
+
+.index-course {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.index-course li {
+  float: left;
+  width: 300px;
+  text-align: center;
+  margin-right: 150px;
+  margin-top: 30px;
+}
+
+.index-course li:nth-child(3n) {
+  margin-right: 0;
+}
+
+.index-course li p {
+  width: 100%;
+  height: auto;
+  text-align: center;
+
+}
+
+.index-course li .li-tit {
+  margin-top: 15px;
+  font-size: 20px;
+  color: #333333;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.index-course li .li-con {
+  margin-top: 25px;
+  font-size: 15px;
+  color: #666666;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.online-course {
+  width: 1200px;
+  height: auto;
+  overflow: hidden;
+}
+
+.swiper-online-course {
+  height: 320px;
+  margin-top: 45px !important;
+}
+
+.online-course .pic-card {
+  width: 260px;
+  height: 270px;
+  border: 1px solid #F19200;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  float: left;
+}
+
+.online-course .pic-card img {
+  width: 258px;
+  height: 160px;
+  border-top-left-radius: 4px;
+  -webkit-border-top-left-radius: 4px;
+  -moz-border-top-left-radius: 4px;
+  -ms-border-top-left-radius: 4px;
+  -o-border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  -webkit-border-top-right-radius: 4px;
+  -moz-border-top-right-radius: 4px;
+  -ms-border-top-right-radius: 4px;
+  -o-border-top-right-radius: 4px;
+}
+
+.online-course .pic-card .pic-card-tit {
+  width: 220px;
+  margin: 15px auto 0;
+  text-align: center;
+  font-size: 18px;
+  color: #333333;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.online-course .pic-card .pic-card-teacher {
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 15px;
+  color: #999999;
+}
+
+.online-course .pic-card .pic-card-time {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  margin-top: 5px;
+}
+
+.online-course .pic-card .pic-card-time span {
+  width: 50%;
+  height: auto;
+  float: left;
+  font-size: 15px;
+  color: #999;
+  text-align: center;
+}
+
+.online-course .pic-card .pic-card-time span img {
+  width: 16px;
+  height: 16px;
+}
+
+.online-course .pic-card.m_r_53 {
+  margin-right: 53px;
+}
+
+.swiper-pagination-course .swiper-pagination-bullet, .swiper-pagination-teacher .swiper-pagination-bullet,.swiper-pagination-case .swiper-pagination-bullet{
+  width: 70px;
+  height: 10px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.swiper-pagination-course .swiper-pagination-bullet-active, .swiper-pagination-teacher .swiper-pagination-bullet-active ,.swiper-pagination-case .swiper-pagination-bullet-active{
+  background: #F19200;
+}
+
+.index-news {
+  width: 1200px;
+  height: auto;
+  overflow: hidden;
+  margin: 90px auto 0;
+}
+
+.index-news .company-news {
+  width: 720px;
+  height: auto;
+  overflow: hidden;
+  float: left;
+  position: relative;
+}
+
+.index-news .industry-news {
+  width: 420px;
+  float: right;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.index-news .model-more {
+  top: 15px;
+}
+
+.index-news h3 {
+  font-size: 35px;
+  color: #333333;
+  font-weight: normal;
+}
+
+.index-news .news-en-tit {
+  width: 100%;
+  font-size: 15px;
+  color: #666666;
+  height: 20px;
+  line-height: 20px;
+}
+
+.index-news .news-en-tit span {
+  float: right;
+  width: 560px;
+  height: 1px;
+  background: #666666;
+  margin-top: 10px;
+}
+
+.industry-news .news-en-tit span {
+  width: 245px;
+}
+
+.company-news .company-news-list {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  margin-top: 15px;
+}
+
+.company-news .company-news-list li {
+  width: 715px;
+  height: 125px;
+  overflow: hidden;
+  margin-top: 30px;
+  cursor: pointer;
+  transition: all 0.15s linear;
+}
+
+.company-news .company-news-list li:hover {
+  box-shadow: 1px 0 3px 1px #F19200;
+}
+
+.company-news .company-news-list li .news-pic {
+  float: left;
+  width: 223px;
+  height: 125px;
+}
+
+.company-news .company-news-list li .news-main {
+  width: 490px;
+  height: 125px;
+  padding: 10px 20px;
+  float: left;
+}
+
+.company-news .company-news-list li .news-main .news-main-title {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 20px;
+  color: #333333;
+}
+
+.company-news .company-news-list li .news-main .news-main-con {
+  width: 100%;
+  height: auto;
+  font-size: 15px;
+  color: #666;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  margin-top: 13px;
+}
+
+.company-news .company-news-list li .news-main .news-main-date {
+  font-size: 15px;
+  color: #999;
+  width: 100%;
+  height: auto;
+  margin-top: 13px;
+}
+
+.industry-news .industry-list {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.industry-news .industry-list li {
+  width: 100%;
+  height: 82px;
+  margin-top: 35px;
+  cursor: pointer;
+}
+
+.industry-news .industry-list li .news-pic {
+  float: left;
+  width: 146px;
+  height: 82px;
+}
+
+.industry-news .industry-list li .news-pic img {
+  width: 146px;
+  height: 82px;
+}
+
+.industry-news .industry-list li .news-main {
+  width: 274px;
+  height: 82px;
+  float: left;
+  padding: 0 20px;
+}
+
+.industry-news .industry-list li .news-main .main-title {
+  font-size: 18px;
+  color: #333;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.industry-news .industry-list li:hover .main-title {
+  color: #F19200;
+}
+
+.industry-news .industry-list li .news-main .main-date {
+  width: 100%;
+  height: auto;
+  color: #666;
+  font-size: 15px;
+  margin-top: 13px;
+}
+
+.index-teacher {
+  width: 1200px;
+  height: auto;
+  overflow: hidden;
+  margin: 20px auto;
+}
+
+.index-teacher .swiper-teacher {
+  width: 1200px;
+  height: 1120px;
+  overflow: hidden;
+}
+
+.index-teacher .swiper-teacher .teacher-list {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  padding-bottom: 5px;
+}
+
+.index-teacher .swiper-teacher .teacher-list li {
+  width: 266px;
+  height: 487px;
+  float: left;
+  margin-right: 43px;
+  background: #EEEEEE;
+  margin-top: 30px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.15s linear;
+  -webkit-transition: all 0.15s linear;
+  -moz-transition: all 0.15s linear;
+  -ms-transition: all 0.15s linear;
+  -o-transition: all 0.15s linear;
+
+}
+
+.index-teacher .swiper-teacher .teacher-list li:hover {
+  box-shadow: 0 1px 4px 1px #F19200;
+}
+
+.index-teacher .swiper-teacher .teacher-list li:nth-child(4n) {
+  margin-right: 0;
+}
+
+.index-teacher .swiper-teacher .teacher-list li img {
+  width: 266px;
+  height: 355px;
+}
+
+.index-teacher .swiper-teacher .teacher-list li .teacher-name {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.index-teacher .swiper-teacher .teacher-list li .teacher-name label {
+  font-size: 20px;
+  color: #333;
+}
+
+.index-teacher .swiper-teacher .teacher-list li .teacher-name span {
+  display: inline-block;
+  width: 85px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  color: #fff;
+  background: #F19200;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  margin-left: 10px;
+}
+
+.index-teacher .swiper-teacher .teacher-list li .teacher-tips {
+  width: 100%;
+  height: auto;
+  padding: 0 10px;
+}
+
+.index-teacher .swiper-teacher .teacher-list li .teacher-tips li {
+  float: left;
+  margin-right: 10px;
+  width: 118px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  border: 1px solid #F19200;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  background: #fff;
+  color: #666666;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.index-teacher .swiper-teacher .teacher-list li .teacher-tips li:nth-child(2n) {
+  margin-right: 0;
+}
+
+.index-certificate {
+  width: 700px;
+  height: 120px;
+  background: #EEEEEE;
+  border-radius: 60px;
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  -ms-border-radius: 60px;
+  -o-border-radius: 60px;
+  margin: 45px auto 0;
+  padding: 15px 110px;
+}
+
+.index-certificate .certificate-logo {
+  width: 90px;
+  height: 90px;
+  background: #fff;
+  border-radius: 50%;
+  float: left;
+  text-align: center;
+  line-height: 90px;
+}
+
+.index-certificate .enter-btn {
+  width: 340px;
+  height: 60px;
+  float: left;
+  margin-left: 50px;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  background: #F19200;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  line-height: 60px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.blog-lists {
+  width: 500px;
+  height: auto;
+  overflow: hidden;
+  float: left;
+}
+
+.blog-line {
+  width: 1px;
+  height: 415px;
+  float: left;
+  margin-left: 99px;
+  margin-right: 100px;
+  background: #999999;
+  margin-top: 45px;
+}
+
+.blog-lists li {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+.blog-lists li .blog-li-date {
+  width: 100%;
+  font-size: 15px;
+  color: #666;
+}
+
+.blog-lists li .blog-li-main {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.blog-lists li .blog-li-main a {
+  display: inline-block;
+  width: 450px;
+  float: left;
+  height: auto;
+  font-size: 20px;
+  color: #333;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.blog-lists li .blog-li-main a:hover {
+  color: #F19200;
+}
+
+.blog-lists li .blog-li-main label {
+  float: right;
+  width: 50px;
+  font-size: 15px;
+  color: #666;
+  text-align: right;
+}
+
+.index-case {
+  width: 1200px;
+  height: 500px;
+  margin-top: 45px;
+  overflow: hidden;
+}
+.swiper-case{
+  height: 450px;
+}
+.index-case .case-lists {
+  width: 1200px;
+  height: auto;
+  overflow: hidden;
+}
+
+.index-case .case-lists li {
+  width: 225px;
+  height: auto;
+  margin-top: 30px;
+  margin-right: 18px;
+  float: left;
+}
+
+.index-case .case-lists li:nth-child(5n) {
+  margin-right: 0;
+}
+
+.index-case .case-lists li .case-tit {
+  width: 225px;
+  text-align: center;
+  height: auto;
+  margin-top: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+
+
+
+
+
+
+

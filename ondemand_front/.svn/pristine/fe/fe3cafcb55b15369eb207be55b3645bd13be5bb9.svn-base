@@ -1,0 +1,188 @@
+.footer {
+  width: 100%;
+  min-width: 1200px;
+  height: 650px;
+  background: #3E3E3E;
+  overflow-x: auto;
+}
+
+.footer-copyright {
+  width: 100%;
+  min-width: 1200px;
+  height: 40px;
+  background: #000;
+}
+
+.footer-copyright p {
+  width: 1200px;
+  height: 40px;
+  overflow-x: auto;
+  text-align: center;
+  line-height: 40px;
+  font-size: 12px;
+  color: #C0C0C0;
+  margin: 0 auto;
+}
+
+.footer-copyright p span {
+  color: #616161;
+}
+
+.container {
+  width: 1200px;
+  min-width: 1200px;
+  margin: 0 auto;
+  height: 424px;
+}
+
+.container .container-top {
+  width: 1200px;
+  border-bottom: 1px solid #4D4D4D;
+  padding: 107px 0 40px 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  overflow: hidden;
+}
+
+.container .container-top .container-top-left {
+  width: 550px;
+  float: left;
+  border-right: 1px solid #4D4D4D;
+  height: 276px;
+}
+
+.container .container-top .container-top-left img {
+  margin-right: 70px;
+}
+
+.container .container-top .container-top-line {
+  width: 1px;
+}
+
+.container .container-top .container-top-right {
+  float: left;
+  width: 650px;
+}
+
+.container-top-right-mian {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.container-top-right-mian .mian-detail {
+  width: 150px;
+  height: auto;
+  overflow: hidden;
+  text-align: center;
+  margin-left: 60px;
+  float: left;
+}
+
+.container-top-right-mian .mian-detail p {
+  width: 150px;
+  color: #fff;
+  font-size: 16px;
+}
+
+.container-top-right-mian .mian-detail ul, .container-top-right-mian .mian-detail li {
+  width: 150px;
+  text-align: center;
+  font-size: 12px;
+}
+
+.container-top-right-mian .mian-detail li {
+  margin-top: 15px;
+}
+
+.container-top-right-mian .mian-detail li a {
+  font-size: 13px;
+  color: #fff;
+  transition: all 0.1s linear;
+  -webkit-transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
+  -ms-transition: all 0.1s linear;
+  -o-transition: all 0.1s linear;
+}
+
+.container-top-right-mian .mian-detail li a:hover {
+  color: #F19200;
+  text-decoration: underline;
+}
+
+.container-top-right .container-top-contact {
+  width: 430px;
+  height: 90px;
+  background: #323232;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  margin-left: 100px;
+  margin-top: 38px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

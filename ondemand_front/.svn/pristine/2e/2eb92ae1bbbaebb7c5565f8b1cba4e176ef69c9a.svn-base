@@ -1,0 +1,248 @@
+<template>
+  <div class="con">
+    <div class="ondemand-index">
+      <!--banner轮播-->
+      <div class="position-relative">
+        <div class="swiper-container swiper-container-banner row">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide swiper-slide-banner" v-for="(item,index) in banners" :key="index">
+              <a target="_blank" style="display: block;width: 100%;height: 100%;" :href="item.url">
+                <!--<img class="swiper-img-banner" :src="item" alt="没有？" />-->
+                <div class="swiper-img-banner-bg" :style="'background-image: url('+ item.src +')'"></div>
+              </a>
+            </div>
+          </div>
+          <!-- 如果需要分页器 -->
+          <div class="swiper-pagination swiper-pagination-banner"></div>
+          <div class="swiper-button-prev banner-prev">⟨</div><!--左箭头-->
+          <div class="swiper-button-next banner-next">⟩</div><!--右箭头-->
+        </div>
+      </div>
+
+      <!--公开课-->
+      <div class="index-model">
+        <p class="model-title">公开课</p>
+        <p class="model-en-tit">Offline Courses</p>
+        <span class="model-more">
+          <img src="/images/index/more.png" alt="">
+        </span>
+        <ul class="index-course">
+          <li v-for="(item,index) in course" :key="index">
+            <img :src="item.url" alt="">
+            <p class="li-tit">{{item.tit}}</p>
+            <p class="li-con">{{item.con}}</p>
+          </li>
+        </ul>
+      </div>
+
+      <!--线上课程-->
+      <div class="index-model">
+        <p class="model-title">线上课程</p>
+        <p class="model-en-tit">Online Courses</p>
+        <span class="model-more">
+          <img src="/images/index/more.png" alt="">
+        </span>
+        <div class="online-course">
+          <div class="swiper-container swiper-online-course">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide" v-for="(item,index) in online_class" :key="index">
+                <div class="pic-card" v-for="(it,ind) in item" :key="ind" :class="{m_r_53: ind !== 3}">
+                  <a href="javascript:;">
+                    <img :src="it.url" alt="">
+                    <p class="pic-card-tit">{{it.title}}</p>
+                    <p class="pic-card-teacher">{{it.teacher}} | {{it.post}}</p>
+                    <p class="pic-card-time">
+                      <span><img src="/images/index/time1.png" alt="">{{it.nums}}课时</span>
+                      <span><img src="/images/index/time2.png" alt="">{{it.times}}小时</span>
+                      <span></span>
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination swiper-pagination-course"></div>
+          </div>
+        </div>
+      </div>
+
+      <!--公司新闻，行业资讯-->
+      <div class="index-news">
+        <div class="company-news"></div>
+        <div class="industry-news"></div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+  import Swiper from 'swiper'
+  import 'swiper/dist/css/swiper.min.css';
+
+  export default {
+    name: "index",
+    components: {
+      Swiper
+    },
+    data() {
+      return {
+        banners: [
+          {
+            src: '/images/index/banner01.jpg',
+            url: ''
+          }, {
+            src: '/images/index/banner02.jpg',
+            url: ''
+          }, {
+            src: '/images/index/banner03.jpg',
+            url: ''
+          }, {
+            src: '/images/index/banner04.jpg',
+            url: ''
+          }
+        ],
+        course: [
+          {
+            url: '/images/index/class1.png',
+            tit: '组织经验萃取',
+            con: '每一家优秀企业都会在某一特定领域积累下优秀的经验，但这些经验大多每一家优秀企业都会在某一特定领域积累下优秀的经验，但这些经验大多'
+          },
+          {url: '/images/index/class2.png', tit: '完美授课技巧', con: '什么样的授课才叫完美？授课技巧=呈现技巧吗？'},
+          {url: '/images/index/class3.png', tit: '敏捷课程设计与开发', con: '如果您对课程开发有如下需求，这门课程可能会适合您：以团队模式封'},
+          {url: '/images/index/class4.png', tit: '柯氏四级培训效果评估', con: '您所在的企业大学/培训部门如何对 培训效果 进行评估？没有？只'},
+          {url: '/images/index/class5.png', tit: '基于岗位序列的课程体系', con: '或许对于很多培训专业人士而言，下面的问题早已屡见不鲜：业务部门...'},
+          {url: '/images/index/class6.png', tit: '业务结果导向的在岗带教', con: '我们的企业有没有遇到这些问题：不知道如何复制传承企业优秀的经验？...'},
+        ],
+        online_class: [
+          [{
+            url: '/images/index/course.png',
+            id: 1,
+            title: '如何快速有效呈现培训价值',
+            teacher: '胡丽',
+            post: '博士',
+            times: '1.8',
+            nums: '18'
+          },
+            {
+              url: '/images/index/course.png',
+              id: 2,
+              title: '培训需求分析',
+              teacher: '崔连斌',
+              post: '博士',
+              times: '1.6',
+              nums: '12'
+            },
+            {
+              url: '/images/index/course.png',
+              id: 3,
+              title: '培训管理者专业成长路径',
+              teacher: '崔连斌',
+              post: '博士',
+              times: '12',
+              nums: '18'
+            },
+            {
+              url: '/images/index/course.png',
+              id: 4,
+              title: '基于行为改变的课程设计啊啊啊啊',
+              teacher: '胡丽',
+              post: '博士',
+              times: '1.8',
+              nums: '18'
+            },],
+
+          [{
+            url: '/images/index/course.png',
+            id: 1,
+            title: '如何快速有效呈现培训价值',
+            teacher: '胡丽',
+            post: '博士',
+            times: '1.8',
+            nums: '18'
+          },
+            {
+              url: '/images/index/course.png',
+              id: 2,
+              title: '培训需求分析',
+              teacher: '崔连斌',
+              post: '博士',
+              times: '1.6',
+              nums: '12'
+            },
+            {
+              url: '/images/index/course.png',
+              id: 3,
+              title: '培训管理者专业成长路径',
+              teacher: '崔连斌',
+              post: '博士',
+              times: '12',
+              nums: '18'
+            },
+            {
+              url: '/images/index/course.png',
+              id: 4,
+              title: '基于行为改变的课程设计啊啊啊啊',
+              teacher: '胡丽',
+              post: '博士',
+              times: '1.8',
+              nums: '18'
+            },],
+
+        ]
+      }
+    },
+    methods: {
+      init() {
+        // banner
+        new Swiper('.swiper-container-banner', {
+          autoplay: true,
+          delay: 3000,
+          loop: true,
+          speed: 500,
+          grabCursor: false,
+          // 如果需要分页器
+          pagination: {
+            el: '.swiper-pagination-banner',
+            clickable: true
+          },
+          navigation: {
+            nextEl: '.banner-next',
+            prevEl: '.banner-prev'
+          },
+        });
+        // 线上课程
+        new Swiper('.swiper-online-course', {
+          autoplay: false,
+          delay: 3000,
+          loop: true,
+          speed: 500,
+          grabCursor: false,
+          // 如果需要分页器
+          pagination: {
+            el: '.swiper-pagination-course',
+            clickable: true
+          },
+          // navigation: {
+          //   nextEl: '.banner-next',
+          //   prevEl: '.banner-prev'
+          // },
+        });
+      }
+    },
+    mounted() {
+      this.init();
+    },
+    head: {
+      link: [
+        {
+          href: '/css/index.css',
+          type: 'text/css',
+          rel: 'stylesheet',
+        },
+      ]
+    }
+  }
+</script>
+
+<style scoped>
+
+</style>

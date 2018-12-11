@@ -1,0 +1,23 @@
+<template>
+  <div class="con">
+    <Head></Head>
+    <Footer></Footer>
+  </div>
+</template>
+
+<script>
+  import Head from '~/components/head'
+  import Footer from '~/components/footer'
+
+  export default {
+    name: "blog",
+    components: {
+      Head,
+      Footer
+    }
+  }
+</script>
+
+<style scoped>
+
+</style>

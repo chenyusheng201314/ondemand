@@ -1,0 +1,267 @@
+.case-all {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  margin-top: 50px;
+}
+
+.case-title {
+  width: 277px;
+  height: 45px;
+  background: #E1E1E1;
+  border-radius: 45px;
+  -webkit-border-radius: 45px;
+  -moz-border-radius: 45px;
+  -ms-border-radius: 45px;
+  -o-border-radius: 45px;
+  padding: 5px;
+}
+
+.case-title p {
+  width: 230px;
+  height: 35px;
+  border-radius: 35px;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  -ms-border-radius: 35px;
+  -o-border-radius: 35px;
+  background: #F19200;
+  font-size: 18px;
+  color: #fff;
+  text-align: left;
+  line-height: 35px;
+  padding: 0 20px;
+}
+
+.case-list {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.case-list li {
+  float: left;
+  margin-top: 35px;
+  width: 205px;
+  height: auto;
+  margin-right: 24px;
+}
+
+.case-list li:nth-child(5n) {
+  margin-right: 0;
+}
+
+.case-list li img {
+  width: 205px;
+  height: 109px;
+}
+
+.case-list li p {
+  width: 205px;
+  text-align: center;
+  margin-top: 15px;
+  height: auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.case-detail-all {
+  width: 100%;
+  height: auto;
+}
+
+.case-detail {
+  width: 1200px;
+  margin: 0 auto;
+  height: auto;
+  overflow: hidden;
+  padding-bottom: 95px;
+}
+
+.case-detail-banner {
+  margin-bottom: 65px;
+}
+
+.case-detail .case-detail-nav {
+  width: 1200px;
+  height: 54px;
+  background: #E1E1E1;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  text-align: center;
+  overflow: hidden;
+
+}
+
+.case-detail .case-detail-nav.position {
+  position: fixed;
+  left: 50%;
+  margin-left: -600px;
+  top: 10px;
+  z-index: 10000;
+}
+
+.case-detail .case-detail-nav a {
+  display: inline-block;
+  padding: 0 10px;
+  height: 34px;
+  border-radius: 34px;
+  -webkit-border-radius: 34px;
+  -moz-border-radius: 34px;
+  -ms-border-radius: 34px;
+  -o-border-radius: 34px;
+  color: #333;
+  font-size: 18px;
+  text-align: center;
+  margin-right: 20px;
+  cursor: pointer;
+  margin-top: 10px;
+  line-height: 34px;
+}
+
+.case-detail .case-detail-nav a.choose {
+  background: #F19200;
+  color: #fff;
+}
+
+.case-detail-model {
+  width: 1200px;
+  height: auto;
+  background: #fff;
+  margin-top: 50px;
+  padding: 40px;
+}
+
+.case-detail-model .case-model-title {
+  width: 100%;
+  height: auto;
+  font-size: 20px;
+  color: #F19200;
+  text-align: center;
+}
+
+.case-detail-model .case-detail-introduce {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  padding: 40px;
+  background: #F0F0F0;
+  margin-top: 30px;
+  color: #666;
+  font-size: 16px;
+  text-indent: 50px;
+}
+
+.case-detail-model .case-detail-ul {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  margin-top: -40px;
+}
+
+.case-detail-model .case-detail-ul li {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #DDDDDD;
+  padding: 66px 0 40px;
+}
+
+.case-detail-model .case-detail-ul li:last-child {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.case-detail-model .case-detail-ul li .case-detail-main {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.case-detail-model .case-detail-ul li .main-tit {
+  font-size: 18px;
+  color: #F19200;
+  margin-top: 40px;
+}
+
+.case-detail-model .case-detail-ul li .main-con {
+  font-size: 16px;
+  color: #666;
+  margin-top: 20px;
+}
+
+.case-detail-model .other-case {
+  width: 1120px;
+  height: 350px;
+}
+
+.case-detail-model .other-case .case-lists {
+  width: 100%;
+  height: auto;
+
+}
+
+.case-detail-model .other-case .case-lists li {
+  width: 205px;
+  height: auto;
+  margin-top: 30px;
+  margin-right: 23px;
+  float: left;
+}
+
+.case-detail-model .other-case .case-lists li img {
+  width: 205px;
+}
+
+.case-detail-model .other-case .case-lists li:nth-child(5n) {
+  margin-right: 0;
+}
+
+.case-detail-model .other-case .case-lists li .case-tit {
+  width: 205px;
+  text-align: center;
+  height: auto;
+  margin-top: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.swiper-button-prev, .swiper-container-rtl .swiper-button-next, .swiper-button-next {
+  background-image: none !important;
+}
+
+.banner-prev {
+  background-image: none;
+  font-size: 44px;
+  line-height: 44px;
+  font-weight: 800;
+  opacity: 0.5;
+  color: #666;
+}
+
+.banner-next {
+  background-image: none;
+  font-size: 44px;
+  opacity: 0.5;
+  line-height: 44px;
+  font-weight: 800;
+  color: #666;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

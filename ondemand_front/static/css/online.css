@@ -1,0 +1,220 @@
+.online-tab {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  text-align: center;
+}
+
+.online-tab span {
+  display: inline-block;
+  width: 165px;
+  height: 45px;
+  border-radius: 40px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+  background: #E1E1E1;
+  text-align: left;
+  padding: 5px;
+}
+
+.online-tab span a {
+  display: inline-block;
+  width: 120px;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  border-radius: 35px;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  -ms-border-radius: 35px;
+  -o-border-radius: 35px;
+  background: #999999;
+  color: #fff;
+  font-size: 20px;
+}
+
+.online-tab span a.choose {
+  background: #F19200;
+}
+
+.online-lists {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  margin-top: 35px;
+}
+
+.online-lists li {
+  float: left;
+  width: 355px;
+  height: auto;
+  overflow: hidden;
+  margin-right: 26px;
+  background: #F5F5F5;
+  margin-top: 25px;
+  cursor: pointer;
+}
+
+.online-lists li:nth-child(3n) {
+  margin-right: 0;
+}
+
+.online-lists li img {
+  width: 355px;
+  height: 202px;
+}
+
+.online-lists li .online-list-tit, .online-lists li .online-list-info {
+  width: 95%;
+  height: auto;
+  margin: 19px auto 0;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 20px;
+  color: #333333;
+}
+
+.online-lists li .online-list-info {
+  font-size: 16px;
+  color: #999;
+  margin-bottom: 18px;
+}
+
+.online-lists li .online-list-info span {
+  margin-right: 30px;
+}
+
+.online-lists li .online-list-info span img {
+  margin-right: 15px;
+  width: 20px;
+  height: 20px;
+}
+
+.project-lists {
+  margin-top: 30px;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.project-lists li {
+  width: 100%;
+  height: 260px;
+  background: #F5F5F5;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+.project-lists li .project-list-cover {
+  float: left;
+  width: 450px;
+  height: 260px;
+}
+
+.project-lists li .project-list-cover img {
+  width: 450px;
+  height: 260px;
+}
+
+.project-lists li .project-list-con {
+  width: 690px;
+  height: 260px;
+  float: left;
+  padding: 40px 30px;
+}
+
+.project-lists li .project-list-con .list-con-tit {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 24px;
+  color: #F19200;
+}
+
+.project-lists li .project-list-con .list-con-con {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  font-size: 16px;
+  color: #999999;
+  margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

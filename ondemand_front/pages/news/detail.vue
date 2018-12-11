@@ -1,0 +1,161 @@
+<template>
+  <div>
+    <div class="static-banner" :style="{backgroundImage: 'url(' + bg + ')', backgroundSize:'cover'}"></div>
+    <div class="model-main">
+      <Site :data="address"></Site>
+      <div class="news-detail">
+        <div class="news-article">
+          <p class="article-title">
+            {{article_info.title}}
+          </p>
+          <p class="article-info">
+            <span>{{article_info.date}}</span>
+            <span>来源：{{article_info.source}}</span>
+            <span>责任编辑：{{article_info.editor}}</span>
+          </p>
+          <div class="article-main" v-html="article_info.con"></div>
+          <div class="article-ban">
+            <img src="/images/news/banquan.png" alt="">
+          </div>
+          <div class="other-article">
+            <a :href="'/news/detail?'+ news_type + '-' + article_info.prev.id" class="other-left" v-show="article_info.prev.id !== ''">
+              上一篇：{{article_info.prev.title}}
+            </a>
+            <a :href="'/news/detail?'+ news_type + '-' + article_info.next.id" class="other-right" v-show="article_info.next.id !== ''">
+              下一篇：{{article_info.next.title}}
+            </a>
+          </div>
+        </div>
+        <div class="news-other-lists">
+          <div class="other-tips">
+            <p>其他资讯</p>
+          </div>
+          <ul>
+            <li v-for="(item,index) in other_list" :key="index">
+              <a :href="'/news/detail?'+ news_type + '-' + item.id">
+                <img :src="item.cover" alt="">
+                <p>{{item.title}}</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+  import Site from '~/components/site'
+
+  export default {
+    name: "detail",
+    components: {
+      Site
+    },
+    data() {
+      return {
+        bg: '/images/bg-news.jpg',
+        address: [],
+        news_id: '',
+        news_type: '1',
+        article_info: {
+          title: '懂得这个原理才能好好做培训',
+          date: '2018-11-11',
+          source: '安迪曼大学',
+          editor: '小气',
+          prev: {
+            title: '懂得这个原理才能好好做培训',
+            id: 2,
+          },
+          next: {
+            title: '懂得这个原理才能好好做培训',
+            id: 3,
+          },
+          con: '有研究表明：在一定时期内，工作后再次脱产学习的成年人的数量与经济发展有着此消彼长的关系，当经济不景气的时候，有一部分已经工作的人会选择脱产再深造，以待将来就业的时候更加有战斗力，还有一部分会选择在岗学习。近几年，我国整体经济发展较缓、压力增大、实体经济不振，企业愈发需要提升核心竞争力，提升核心竞争力的核心在于人才的培养，企业人才培养的主要方式是培训。企业培训是针对在岗的成年人，成年人的培训是建立在成年人学习的特征上。那么成年人学习有什么特征呢?首先我们了解关于成年人学习与儿童学习的不同之处。第一个不同之处，儿童的学习是根据不同年纪的学习大纲，展开系统的学习，因此儿童对学习的内容没有很强的目的性。企业的培训是与企业的战略目标和业务目标紧密相连的，因此成年人的培训具有很强的目的性，需要把所学到的东西尽快地应用到工作中去。第二个不同之处，根据美国心理学家卡特尔提出智力理论，在25岁之前，流体智力和晶体智力都会随着年龄的增长不断增强，而在25岁之后，代表类似运算速度、推理能力等以生理为基础的流体智力会减退，代表类似语言、社会职能等的晶体智力不会随着年龄的增长而减退，因此，儿童正处在晶体智力和流体智力上升期，有很多知识需要进行理解记忆，所以儿童会采用记忆为主练习为辅的学习方式，而成年人的学习方式更倾向于通过大量的练习来加强记忆。第三个不同之处，在学习之初，儿童就像一张白纸，对新学习的知识知之甚少，而成年人他们已经具有一定的知识经验，遇到不知道的事物，他们首先会在网上查一些是什么的资料，所以成年人的学习是从知道到应用的过程。第四个不同之处，从学习效果来看，儿童属于宽大碗口式，接收到的基本都会吸纳进去，而成人学习属于窄口花瓶式，是有选择性地吸收部分。最开始对成年人的培训是基于儿童学习理论展开，鉴于成年人和儿童学习的差异，需要分析出成年人自身的特点，然后展开相应的学习培训。美国成人教育之父马尔科姆.诺尔斯在代表作《被忽略的群体：成人学习者》书中，对成年人的学习原理进行了详细的解说和深刻的总结。他认为成人学习有9大特征：第一个，知道学习的目的和原因。成人的学习动机是基于工作的需要，是自我导向性的，随着个体的成熟和独立，成人学习者在多数情况下能主动分析自己的学习需要，树立明确的学习目的，对学习效果有一个很好的预期。第二个，感觉有现实或迫切的需求就回去学。社会压力是促使成人学习的主要原因，并且学习的过程中提供持续的推动力。第三个，对学习内容的实用性和结果特别关注。成人学习面临着社会制度约束和个体学习需求之间的矛盾，因此，他们必须考虑学习投入与学习产出之间的经济效益问题。第四个，乐意表达个人意见，使人感觉其存在价值。成年人对很多事都有自己的看法，他们在工作学习中会更加愿意跟大家分享，一方面能够相互学习，另一方面也能够展示自己在某方面的才能，赢得大家的尊重。第五个，拥有丰富的经验，喜欢将新知识与经验做比较。已有的经验对于进一步的学习者来说，既具有积极意义，也可能造成学习障碍，它将直接影响学习者对新知识的理解和归纳，进而影响学习的方式和态度。第六个，喜欢按自己的方式和进度学习，期望知道效果。成人学习是自我导向性、工学兼顾的学习，因此需要灵活的学习时间和学习方式，而且自主性越强对结果越期待。第七个，年纪越大，对于复杂动作的协调性越差。随着生理的成熟，成人的感觉器官开始慢慢衰弱，特别是视觉和听觉。国外研究表明，不同年龄人群学习能力的差异主要在于知觉、注意力控制等方面。对于操作技能的学习，年龄越大难度越高，这与人的生理机能是密切相关的。第八个，在轻松、愉悦和友爱的环境下，学习效果更好。成人学习是在适应社会变化的外在动力和自我需要的内驱力作用下，迫使自己有很强的学习欲望，但是由于成人是兼顾学习、工作、家庭以及担任多重社会角色等方面的原因，学习过程中工学矛盾特别突出因此，一个好的氛围的营造能让成人更好地参与到学习中。第九个，节奏和进度的掌握影响整体效果，易产生疲倦效果。通常年纪大的人似乎更多地忽略错误而不是回答错误，就是说他们根本没有反应而不是认知错误，如果允许他们自定义学习速度，这种错误往往会明显减少，所以即使他们有很强的学习目的，但是如果速度超过了他们生理能承受的范围就很容易产生器官和心理的疲倦。马尔科姆.诺尔斯成年人一系列的学习特征，都是培训工作非常有价值的参考依据。在此，我们以安迪曼学习项目设计为例，来说明成人学习特征对人才培养的指导——如图所示的学习项目设计思路：通过训前、训中、和训后全过程的对成人学习原理的应用合理配置学习资源，设计学习场域，调动成人学习意愿和积极性，以有效达成培训效果。训前——需求诊断分析。成人学习具有“知道学习的目的和原因”、“感觉有现实或迫切的需求就回去学”两大特征，因此在项目设计之初，需要通过面对面访谈、问卷调查、工作任务分析法等方法来分析了解员工在工作中遇到了哪些困难，哪些方面的能力需要提升，他们期望通过培训达到一个怎么样的效果。鉴于员工个人的学习目标与企业的业务目标和战略规划是紧密联系的，因此在制定个人学习目标时必须契合企业的业务目标和战略规划，将个人学习目标、企业业务目标和战略规划三者同时考虑，形成培训的主题方向。'
+        },
+        other_list: [
+          {
+            id: 1,
+            title: '培训评估无法落地，你可能忘了建立培训价值证据链',
+            cover: '/images/index/course.png',
+          },
+          {
+            id: 2,
+            title: '培训评估无法落地，你可能忘了建立培训价值证据链',
+            cover: '/images/index/course.png',
+          },
+          {
+            id: 3,
+            title: '培训评估无法落地，你可能忘了建立培训价值证据链',
+            cover: '/images/index/course.png',
+          },
+          {
+            id: 4,
+            title: '培训评估无法落地，你可能忘了建立培训价值证据链',
+            cover: '/images/index/course.png',
+          },
+          {
+            id: 5,
+            title: '培训评估无法落地，你可能忘了建立培训价值证据链',
+            cover: '/images/index/course.png',
+          },
+        ]
+      }
+    },
+    methods: {
+      type_init() {
+        const that = this;
+        let url = window.location.href.split('?')[1];
+        if (!url) {
+          that.address = [
+            {name: '首页', link: '/', next_show: true},
+            {name: '资讯动态', link: '/news', next_show: true},
+            {name: '行业资讯', link: 'javascript:;', next_show: false},
+          ];
+          that.news_id = '';
+          that.news_type = '';
+        } else {
+          let type = url.split('-')[0];
+          let id = url.split('-')[1];
+          if (id) {
+            that.news_id = id;
+          } else {
+            that.news_id = '';
+          }
+
+          if (type === '1') {
+            that.address = [
+              {name: '首页', link: '/', next_show: true},
+              {name: '资讯动态', link: '/news', next_show: true},
+              {name: '行业资讯', link: 'javascript:;', next_show: false},
+            ];
+            that.news_type = '1';
+          } else {
+            that.address = [
+              {name: '首页', link: '/', next_show: true},
+              {name: '资讯动态', link: '/news', next_show: true},
+              {name: '最新动态', link: 'javascript:;', next_show: false},
+            ];
+            that.news_type = '2';
+          }
+        }
+      }
+    },
+    mounted() {
+      this.type_init();
+    },
+    head: {
+      link: [
+        {
+          href: '/css/news.css',
+          type: 'text/css',
+          rel: 'stylesheet',
+        },
+      ]
+    }
+  }
+</script>
+
+<style scoped>
+
+</style>

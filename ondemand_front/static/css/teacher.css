@@ -1,0 +1,410 @@
+.tea-lists {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  padding-bottom: 5px;
+  margin-top: -20px;
+}
+
+.tea-lists li {
+  float: left;
+  width: 266px;
+  margin-right: 19px;
+  cursor: pointer;
+  background: #EEEEEE;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  padding-bottom: 15px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.tea-lists li:nth-child(4n) {
+  margin-right: 0;
+}
+
+.tea-lists li img {
+  width: 266px;
+  height: 355px;
+}
+
+.tea-lists li .tea-name {
+  width: 100%;
+  height: auto;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.tea-lists li .tea-name label {
+  font-size: 20px;
+  color: #333;
+  margin-right: 9px;
+}
+
+.tea-lists li .tea-name span {
+  display: inline-block;
+  width: 85px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  background: #F19200;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  color: #fff;
+  font-size: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 0 3px;
+}
+
+.tea-lists li .tea-tips {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  padding: 0 10px;
+}
+
+.tea-lists li .tea-tips li {
+  float: left;
+  margin-right: 10px;
+  width: 118px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  border: 1px solid #F19200;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  background: #fff;
+  color: #666666;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.tea-lists li .tea-tips li:nth-child(2n) {
+  margin-right: 0;
+}
+
+.tea-lists .tea-list:hover {
+  box-shadow: 0 1px 4px 1px #F19200;
+}
+
+.model-main.tea-detail-main {
+  margin-bottom: 0 !important;
+}
+.tea-detail-info {
+  width: 100%;
+  height: auto;
+  overflow: auto;
+  margin-top: 50px;
+}
+
+.tea-detail-info .tea-info-pic {
+  float: left;
+  width: 266px;
+  height: 266px;
+  border-radius: 200px;
+  -webkit-border-radius: 200px;
+  -moz-border-radius: 200px;
+  -ms-border-radius: 200px;
+  -o-border-radius: 200px;
+  overflow: hidden;
+}
+
+.tea-detail-info .tea-info-con {
+  width: 800px;
+  height: auto;
+  overflow: hidden;
+  float: right;
+}
+
+.tea-detail-info .tea-info-con .tea-con-name {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.tea-detail-info .tea-info-con .tea-con-name label {
+  font-size: 20px;
+  color: #333;
+  margin-right: 25px;
+}
+
+.tea-detail-info .tea-info-con .tea-con-name span {
+  display: inline-block;
+  min-width: 85px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  padding: 0 15px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  background: #F19200;
+  color: #fff;
+  font-size: 14px;
+}
+
+.tea-detail-info .tea-info-con .tea-introduce {
+  width: 100%;
+  height: auto;
+  margin-top: 25px;
+  font-size: 15px;
+  color: #666;
+}
+
+.tea-detail-info .tea-info-con .tea-bg {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  margin-top: 25px;
+}
+
+.tea-detail-info .tea-info-con .tea-bg .pad-l-5 {
+  padding-left: 5%;
+}
+
+.tea-detail-info .tea-info-con .tea-bg .pad-r-5 {
+  padding-right: 5%;
+}
+
+.tea-detail-info .tea-info-con .tea-bg .tea-bg-left {
+  width: 50%;
+  float: left;
+}
+
+.tea-detail-info .tea-info-con .tea-bg .tea-bg-left h3 {
+  font-size: 20px;
+  color: #F19200;
+}
+
+.tea-detail-info .tea-info-con .tea-bg .tea-bg-left p {
+  font-size: 15px;
+  color: #666;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-top: 5px;
+}
+
+.tea-detail-detail {
+  margin-top: 55px;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.tea-detail-detail h3 {
+  font-size: 20px;
+  color: #F19200;
+}
+
+.tea-detail-detail p {
+  font-size: 15px;
+  color: #666;
+  margin-top: 8px;
+}
+
+.model-main.tea-detail-main.tea-detail-main2 {
+  margin-top: 30px !important;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  position: relative;
+}
+
+.tea-detail-blog {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.tea-detail-blog li {
+  margin-top: 30px;
+  float: left;
+  width: 30%;
+  margin-right: 5%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.tea-detail-blog li:hover a {
+  color: #F19200;
+}
+
+.tea-detail-blog li:nth-child(3n) {
+  margin-right: 0;
+}
+
+.tea-detail-blog li a {
+  font-size: 18px;
+  color: #666;
+}
+
+.to-more {
+  position: absolute;
+  right: 20px;
+  top: 57px;
+  cursor: pointer;
+}
+
+.tea-open-list {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  margin-top: 50px;
+}
+
+.tea-open-list li {
+  margin-right: 27px;
+  width: 260px;
+  height: auto;
+  overflow: hidden;
+  float: left;
+}
+.tea-open-list li:last-child{
+  margin-right: 0;
+}
+.tea-open-list li img{
+  width: 260px;
+  height: 160px;
+}
+.tea-open-list li p {
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+  height: auto;
+  font-size: 18px;
+  color: #666;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
